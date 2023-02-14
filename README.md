@@ -1,7 +1,10 @@
 # Civic Address Format
 
+[![npm (scoped)](https://img.shields.io/npm/v/@cityssm/civic-address-format)](https://www.npmjs.com/package/@cityssm/civic-address-format)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/bc565583138143578c48dfc3e6daec66)](https://www.codacy.com/gh/cityssm/civic-address-format/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cityssm/civic-address-format&amp;utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/fb7201564a832823e6c6/maintainability)](https://codeclimate.com/github/cityssm/civic-address-format/maintainability)
+[![codecov](https://codecov.io/gh/cityssm/civic-address-format/branch/main/graph/badge.svg?token=JZX2EZXFPE)](https://codecov.io/gh/cityssm/civic-address-format)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/cityssm/civic-address-format/coverage.yml)](https://github.com/cityssm/civic-address-format/actions/workflows/coverage.yml)
 
 Formats a civic address from its pieces based on
 [guidelines from Canada Post](https://www.canadapost-postescanada.ca/cpc/en/support/kb/addressing/accuracy/addressing-mail-accurately)
