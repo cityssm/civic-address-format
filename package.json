@@ -1,10 +1,11 @@
 {
-  "name": "@cityssm/street-address-format",
+  "name": "@cityssm/civic-address-format",
   "version": "0.1.0",
   "type": "module",
-  "description": "Formats a street address from its pieces. ",
+  "description": "Formats a civic address from its pieces. ",
   "keywords": [
     "address",
+    "address-format",
     "civic-address",
     "property-address",
     "street-address"
@@ -19,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cityssm/street-address-format.git"
+    "url": "git+https://github.com/cityssm/civic-address-format.git"
   },
   "author": "The Corporation of the City of Sault Ste. Marie",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cityssm/street-address-format/issues"
+    "url": "https://github.com/cityssm/civic-address-format/issues"
   },
-  "homepage": "https://github.com/cityssm/street-address-format#readme",
+  "homepage": "https://github.com/cityssm/civic-address-format#readme",
   "devDependencies": {
     "@types/mocha": "^10.0.1",
     "@types/node": "^18.13.0",

@@ -1,7 +1,7 @@
 import * as assert from 'node:assert'
-import { formatStreetAddress, type StreetAddressPieces } from '../index.js'
+import { formatCivicAddress, type CivicAddressPieces } from '../index.js'
 
-const streetAddressTests: Record<string, StreetAddressPieces> = {
+const streetAddressTests: Record<string, CivicAddressPieces> = {
   '99 Foster Dr': {
     civicNumber: '99',
     streetName: 'Foster Dr'
@@ -24,14 +24,14 @@ const streetAddressTests: Record<string, StreetAddressPieces> = {
   }
 }
 
-describe('formatStreetAddress', () => {
-  for (const [formattedStreetAddress, streetAddressPieces] of Object.entries(
+describe('formatCivicAddress', () => {
+  for (const [formattedCivicAddress, civicAddressPieces] of Object.entries(
     streetAddressTests
   )) {
-    it(`Formats "${formattedStreetAddress}"`, () => {
+    it(`Formats "${formattedCivicAddress}"`, () => {
       assert.strictEqual(
-        formatStreetAddress(streetAddressPieces),
-        formattedStreetAddress
+        formatCivicAddress(civicAddressPieces),
+        formattedCivicAddress
       )
     })
   }

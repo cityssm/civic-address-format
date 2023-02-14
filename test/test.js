@@ -1,5 +1,5 @@
 import * as assert from 'node:assert';
-import { formatStreetAddress } from '../index.js';
+import { formatCivicAddress } from '../index.js';
 const streetAddressTests = {
     '99 Foster Dr': {
         civicNumber: '99',
@@ -22,10 +22,10 @@ const streetAddressTests = {
         qualifier: '1/2'
     }
 };
-describe('formatStreetAddress', () => {
-    for (const [formattedStreetAddress, streetAddressPieces] of Object.entries(streetAddressTests)) {
-        it(`Formats "${formattedStreetAddress}"`, () => {
-            assert.strictEqual(formatStreetAddress(streetAddressPieces), formattedStreetAddress);
+describe('formatCivicAddress', () => {
+    for (const [formattedCivicAddress, civicAddressPieces] of Object.entries(streetAddressTests)) {
+        it(`Formats "${formattedCivicAddress}"`, () => {
+            assert.strictEqual(formatCivicAddress(civicAddressPieces), formattedCivicAddress);
         });
     }
 });

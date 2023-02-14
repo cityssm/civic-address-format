@@ -5,17 +5,17 @@ function isLetter(possibleLetter) {
     }
     return false;
 }
-export function formatStreetAddress(streetAddressPieces) {
-    let streetAddress = streetAddressPieces.civicNumber.trim();
-    const unitNumber = (streetAddressPieces.unitNumber ?? '').trim();
+export function formatCivicAddress(civicAddressPieces) {
+    let civicAddress = civicAddressPieces.civicNumber.trim();
+    const unitNumber = (civicAddressPieces.unitNumber ?? '').trim();
     if (unitNumber !== '') {
-        streetAddress = unitNumber + '-' + streetAddress;
+        civicAddress = unitNumber + '-' + civicAddress;
     }
-    const qualifier = (streetAddressPieces.qualifier ?? '').trim();
+    const qualifier = (civicAddressPieces.qualifier ?? '').trim();
     if (qualifier !== '') {
-        streetAddress = streetAddress + (isLetter(qualifier) ? '' : ' ') + qualifier;
+        civicAddress = civicAddress + (isLetter(qualifier) ? '' : ' ') + qualifier;
     }
-    streetAddress += ' ' + streetAddressPieces.streetName.trim();
-    return streetAddress;
+    civicAddress += ' ' + civicAddressPieces.streetName.trim();
+    return civicAddress;
 }
-export default formatStreetAddress;
+export default formatCivicAddress;

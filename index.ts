@@ -1,4 +1,4 @@
-export interface StreetAddressPieces {
+export interface CivicAddressPieces {
   civicNumber: string
   streetName: string
   unitNumber?: string
@@ -15,30 +15,30 @@ function isLetter(possibleLetter: string): boolean {
   return false
 }
 
-export function formatStreetAddress(
-  streetAddressPieces: StreetAddressPieces
+export function formatCivicAddress(
+  civicAddressPieces: CivicAddressPieces
 ): string {
-  let streetAddress = streetAddressPieces.civicNumber.trim()
+  let civicAddress = civicAddressPieces.civicNumber.trim()
 
   // Unit Number (If Available)
 
-  const unitNumber = (streetAddressPieces.unitNumber ?? '').trim()
+  const unitNumber = (civicAddressPieces.unitNumber ?? '').trim()
 
   if (unitNumber !== '') {
-    streetAddress = unitNumber + '-' + streetAddress
+    civicAddress = unitNumber + '-' + civicAddress
   }
 
   // Qualifier (If Available)
 
-  const qualifier = (streetAddressPieces.qualifier ?? '').trim()
+  const qualifier = (civicAddressPieces.qualifier ?? '').trim()
 
   if (qualifier !== '') {
-    streetAddress = streetAddress + (isLetter(qualifier) ? '' : ' ') + qualifier
+    civicAddress = civicAddress + (isLetter(qualifier) ? '' : ' ') + qualifier
   }
 
-  streetAddress += ' ' + streetAddressPieces.streetName.trim()
+  civicAddress += ' ' + civicAddressPieces.streetName.trim()
 
-  return streetAddress
+  return civicAddress
 }
 
-export default formatStreetAddress
+export default formatCivicAddress
