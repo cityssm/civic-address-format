@@ -25,7 +25,7 @@ npm install @cityssm/civic-address-format
 ## Usage
 
 ```javascript
-import { formatCivicAddress } from '@cityssm/civic-address-format'
+import formatCivicAddress from '@cityssm/civic-address-format'
 
 formatCivicAddress({
   civicNumber: '99',

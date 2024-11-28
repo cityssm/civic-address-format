@@ -16,7 +16,7 @@ function isLetter(possibleLetter: string): boolean {
  * @param civicAddressPieces - The pieces of the civic address.
  * @returns the civic address as a formatted string.
  */
-export function formatCivicAddress(
+export default function formatCivicAddress(
   civicAddressPieces: CivicAddressPieces
 ): string {
   let civicAddress = civicAddressPieces.civicNumber.trim()
@@ -26,7 +26,7 @@ export function formatCivicAddress(
   const unitNumber = (civicAddressPieces.unitNumber ?? '').trim()
 
   if (unitNumber !== '') {
-    civicAddress = unitNumber + '-' + civicAddress
+    civicAddress = `${unitNumber}-${civicAddress}`
   }
 
   // Qualifier (If Available)
@@ -41,5 +41,3 @@ export function formatCivicAddress(
 
   return civicAddress
 }
-
-export default formatCivicAddress

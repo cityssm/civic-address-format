@@ -1,6 +1,6 @@
 import * as assert from 'node:assert';
 import { describe, it } from 'node:test';
-import { formatCivicAddress } from '../index.js';
+import formatCivicAddress from '../index.js';
 const streetAddressTests = {
     '99 Foster Dr': {
         civicNumber: '99',

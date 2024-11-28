@@ -4,5 +4,4 @@ export interface CivicAddressPieces {
     unitNumber?: string;
     qualifier?: string;
 }
-export declare function formatCivicAddress(civicAddressPieces: CivicAddressPieces): string;
-export default formatCivicAddress;
+export default function formatCivicAddress(civicAddressPieces: CivicAddressPieces): string;

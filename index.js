@@ -2,11 +2,11 @@ const letterRegex = /^[A-Z]$/i;
 function isLetter(possibleLetter) {
     return possibleLetter.length === 1 && letterRegex.test(possibleLetter);
 }
-export function formatCivicAddress(civicAddressPieces) {
+export default function formatCivicAddress(civicAddressPieces) {
     let civicAddress = civicAddressPieces.civicNumber.trim();
     const unitNumber = (civicAddressPieces.unitNumber ?? '').trim();
     if (unitNumber !== '') {
-        civicAddress = unitNumber + '-' + civicAddress;
+        civicAddress = `${unitNumber}-${civicAddress}`;
     }
     const qualifier = (civicAddressPieces.qualifier ?? '').trim();
     if (qualifier !== '') {
@@ -15,4 +15,3 @@ export function formatCivicAddress(civicAddressPieces) {
     civicAddress += ' ' + civicAddressPieces.streetName.trim();
     return civicAddress;
 }
-export default formatCivicAddress;
