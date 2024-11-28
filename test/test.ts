@@ -1,4 +1,4 @@
-import * as assert from 'node:assert'
+import assert from 'node:assert'
 import { describe, it } from 'node:test'
 
 import formatCivicAddress, { type CivicAddressPieces } from '../index.js'
