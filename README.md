@@ -18,12 +18,13 @@ for properly addressing mail to Canadian and American addresses.
 
 ## Installation
 
-    npm install @cityssm/civic-address-format
+```sh
+npm install @cityssm/civic-address-format
+```
 
 ## Usage
 
 ```javascript
-
 import { formatCivicAddress } from '@cityssm/civic-address-format'
 
 formatCivicAddress({
@@ -39,3 +40,4 @@ formatCivicAddress({
   qualifier: '1/2'
 })
 // => "10-123 1/2 MAIN ST NW"
+```

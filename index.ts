@@ -5,16 +5,17 @@ export interface CivicAddressPieces {
   qualifier?: string
 }
 
-const letterRegex = /^[A-Za-z]$/
+const letterRegex = /^[A-Z]$/i
 
 function isLetter(possibleLetter: string): boolean {
-  if (possibleLetter.length === 1 && letterRegex.test(possibleLetter)) {
-    return true
-  }
-
-  return false
+  return possibleLetter.length === 1 && letterRegex.test(possibleLetter)
 }
 
+/**
+ * Formats a civic address from its pieces using Canada Post guidelines.
+ * @param civicAddressPieces - The pieces of the civic address.
+ * @returns the civic address as a formatted string.
+ */
 export function formatCivicAddress(
   civicAddressPieces: CivicAddressPieces
 ): string {

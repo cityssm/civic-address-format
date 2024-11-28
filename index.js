@@ -1,9 +1,6 @@
-const letterRegex = /^[A-Za-z]$/;
+const letterRegex = /^[A-Z]$/i;
 function isLetter(possibleLetter) {
-    if (possibleLetter.length === 1 && letterRegex.test(possibleLetter)) {
-        return true;
-    }
-    return false;
+    return possibleLetter.length === 1 && letterRegex.test(possibleLetter);
 }
 export function formatCivicAddress(civicAddressPieces) {
     let civicAddress = civicAddressPieces.civicNumber.trim();

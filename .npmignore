@@ -1,10 +1,12 @@
 .github/
 coverage/
 test/
+
 .codeclimate.yml
-.eslintignore
-.eslintrc.json
+.deepsource.toml
 .gitignore
 .prettierignore
-.prettierrc.json
+
+eslint.config.*
+prettier.config.*
 tsconfig.json
