@@ -37,7 +37,7 @@ export default function formatCivicAddress(
     civicAddress = civicAddress + (isLetter(qualifier) ? '' : ' ') + qualifier
   }
 
-  civicAddress += ' ' + civicAddressPieces.streetName.trim()
+  civicAddress += ` ${civicAddressPieces.streetName.trim()}`
 
   return civicAddress
 }

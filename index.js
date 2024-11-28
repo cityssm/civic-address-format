@@ -12,6 +12,6 @@ export default function formatCivicAddress(civicAddressPieces) {
     if (qualifier !== '') {
         civicAddress = civicAddress + (isLetter(qualifier) ? '' : ' ') + qualifier;
     }
-    civicAddress += ' ' + civicAddressPieces.streetName.trim();
+    civicAddress += ` ${civicAddressPieces.streetName.trim()}`;
     return civicAddress;
 }
