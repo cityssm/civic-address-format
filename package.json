@@ -1,6 +1,6 @@
 {
   "name": "@cityssm/civic-address-format",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "Formats a civic address from its pieces. ",
   "keywords": [
