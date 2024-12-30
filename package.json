@@ -30,7 +30,7 @@
   "homepage": "https://github.com/cityssm/civic-address-format#readme",
   "devDependencies": {
     "@types/node": "^22.10.1",
-    "eslint-config-cityssm": "^17.0.0",
+    "eslint-config-cityssm": "^18.2.0",
     "prettier-config-cityssm": "^1.0.0"
   }
 }
