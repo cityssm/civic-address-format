@@ -6,7 +6,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/cityssm/civic-address-format/coverage.yml)](https://github.com/cityssm/civic-address-format/actions/workflows/coverage.yml)
 
 Formats a civic address from its pieces based on
-[guidelines from Canada Post](https://www.canadapost-postescanada.ca/cpc/en/support/kb/addressing/accuracy/addressing-mail-accurately)
+[guidelines from Canada Post](https://www.canadapost-postescanada.ca/cpc/en/support/kb/business/address-accuracy/addressing-mail-accurately)
 for properly addressing mail to Canadian and American addresses.
 
 ## Features
