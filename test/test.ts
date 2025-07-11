@@ -26,11 +26,11 @@ const streetAddressTests: Record<string, CivicAddressPieces> = {
   }
 }
 
-describe('formatCivicAddress', () => {
+await describe('formatCivicAddress', async () => {
   for (const [formattedCivicAddress, civicAddressPieces] of Object.entries(
     streetAddressTests
   )) {
-    it(`Formats "${formattedCivicAddress}"`, () => {
+    await it(`Formats "${formattedCivicAddress}"`, () => {
       assert.strictEqual(
         formatCivicAddress(civicAddressPieces),
         formattedCivicAddress
