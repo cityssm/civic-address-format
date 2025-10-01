@@ -1,7 +1,7 @@
 {
   "name": "@cityssm/civic-address-format",
   "version": "1.0.0",
-  "description": "Formats a civic address from its pieces. ",
+  "description": "Formats a civic address from its pieces.",
   "keywords": [
     "address",
     "address-format",
@@ -26,8 +26,8 @@
     "test": "node --test"
   },
   "devDependencies": {
-    "@types/node": "^24.0.13",
-    "eslint-config-cityssm": "^26.0.0",
+    "@types/node": "^24.6.1",
+    "eslint-config-cityssm": "^30.0.0",
     "prettier-config-cityssm": "^1.0.0"
   },
   "engines": {

@@ -9,6 +9,8 @@ Formats a civic address from its pieces based on
 [guidelines from Canada Post](https://www.canadapost-postescanada.ca/cpc/en/support/kb/business/address-accuracy/addressing-mail-accurately)
 for properly addressing mail to Canadian and American addresses.
 
+Includes Canadian postal code validation and formattings functions.
+
 ## Features
 
 - Typescript support.
@@ -24,7 +26,9 @@ npm install @cityssm/civic-address-format
 ## Usage
 
 ```javascript
-import formatCivicAddress from '@cityssm/civic-address-format'
+import formatCivicAddress, {
+  formatPostalCode
+} from '@cityssm/civic-address-format'
 
 formatCivicAddress({
   civicNumber: '99',
@@ -39,4 +43,15 @@ formatCivicAddress({
   qualifier: '1/2'
 })
 // => "10-123 1/2 MAIN ST NW"
+
+formatPostalCode('p6a5x6')
+// => "P6A 5X6"
 ```
+
+## Related NPM Packages
+
+[**Statistics Canada (StatsCan) Tools for Node**](https://www.npmjs.com/package/@cityssm/statscan-tools)<br />
+Lookups and utilities for working with Statistics Canada (StatsCan) data.
+
+[**MPAC Tools for Node**](https://www.npmjs.com/package/@cityssm/mpac-tools)<br />
+Lookups and utilities for working with MPAC data.
