@@ -14,8 +14,10 @@ Includes Canadian postal code validation and formattings functions.
 ## Features
 
 - Typescript support.
-- Places the unit number (when present) before the civic number with a hyphen in between.
-- Uses no space when a single letter qualifier is present (i.e. '123A'), or one space for longer qualifiers (i.e. '123 1/2')
+- Places the unit number (when present) before the civic number with a hyphen
+  in between.
+- Uses no space when a single letter qualifier is present (i.e. '123A'),
+  or one space for longer qualifiers (i.e. '123 1/2')
 
 ## Installation
 
