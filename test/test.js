@@ -1,3 +1,4 @@
+/* eslint-disable no-await-in-loop */
 import assert from 'node:assert';
 import { describe, it } from 'node:test';
 import formatCivicAddress, { formatPostalCode, isPostalCode } from '../index.js';
@@ -65,4 +66,9 @@ await describe('formatPostalCode', async () => {
             assert.strictEqual(formatPostalCode(input), expected);
         });
     }
+    await it('Throws error for invalid postal code', () => {
+        assert.throws(() => {
+            formatPostalCode('P6A-5X6');
+        });
+    });
 });

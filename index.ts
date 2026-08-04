@@ -65,6 +65,7 @@ export function isPostalCode(possiblePostalCode: string): boolean {
  * Formats a Canadian postal code to the standard "A1A 1A1" format.
  * @param postalCode - A string that represents a postal code.
  * @returns The formatted postal code.
+ * @throws {Error} If the input string is not a valid postal code.
  */
 export function formatPostalCode(postalCode: string): string {
   let trimmedPostalCode = postalCode.trim().toUpperCase().replaceAll(' ', '')
