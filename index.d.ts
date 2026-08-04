@@ -10,6 +10,9 @@ export interface CivicAddressPieces {
  * @returns the civic address as a formatted string.
  */
 export default function formatCivicAddress(civicAddressPieces: CivicAddressPieces): string;
+/**
+ * A regular expression to validate Canadian postal codes.
+ */
 export declare const postalCodeRegex: RegExp;
 /**
  * Checks if a string is a valid Canadian postal code.

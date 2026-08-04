@@ -45,6 +45,9 @@ export default function formatCivicAddress(
   return civicAddress
 }
 
+/**
+ * A regular expression to validate Canadian postal codes.
+ */
 export const postalCodeRegex =
   /^[[A-Z]--[DFIOQUWZ]]\d[[A-Z]--[DFIOQU]] ?\d[[A-Z]--[DFIOQU]]\d$/iv
 
